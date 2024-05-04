@@ -78,9 +78,9 @@ function PostPage() {
     return (
         <div>
             <form onChange={changeInput} onSubmit={createUser}>
-                <input type="text" name='name' placeholder='name' value={user.name}/>
-                <input type="text" name='email' placeholder='email' value={user.email}/>
-                <input type="text" name='username' placeholder='username' value={user.username}/>
+                <input type="text" name='name' placeholder='name' value={user.name} required={true}/>
+                <input type="text" name='email' placeholder='email' value={user.email} required={true}/>
+                <input type="text" name='username' placeholder='username' value={user.username} required={true}/>
 
                 <button className="btn_create">create</button>
             </form>
